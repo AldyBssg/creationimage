@@ -1,0 +1,22 @@
+.title {
+    text-align: center;
+    border: 20px;
+}
+
+
+}
+ body{
+    font-size: clamp(20px, 11vw, 80px); /* pour adapter le contenu de la page à la forme de la page*/
+ }
+ .conteneur-image {
+    overflow: hidden; /* Masque tout contenu dépassant du conteneur */
+    position: relative; /* Position relative pour les éléments enfants positionnés absolument */
+  }
+  
+  .conteneur-image img {
+    transition: transform 0.3s ease; /* Ajoute une transition fluide au zoom/dézoom */
+  }
+  
+  .conteneur-image:hover img {
+    transform: scale(1.2); /* Zoom au survol */
+  }
